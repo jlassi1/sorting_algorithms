@@ -16,7 +16,7 @@ int y;
 if (size < 2)
 	return;
 
-for (i = 0; i < size - 1; i++)
+for (i = 0; i < size; i++)
 {
 	x = i;
 	j = i + 1;
