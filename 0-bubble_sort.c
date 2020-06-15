@@ -1,4 +1,5 @@
 #include "sort.h"
+
 /**
  *bubble_sort-function that sorts an array of integers
  *with bubble sort algorithm
@@ -6,7 +7,9 @@
  *@array: array to sorted
  *@size: size of the array
  *
+ *Return: Nothing
  */
+
 void bubble_sort(int *array, size_t size)
 {
 
@@ -14,7 +17,7 @@ size_t i, j;
 int tmp;
 
 if (!array || size < 2)
-return;
+	return;
 
 	for (i = 0; i < size ; i++)
 	{
@@ -29,6 +32,4 @@ return;
 			}
 		}
 	}
-
-
 }
