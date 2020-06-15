@@ -24,7 +24,7 @@ for (i = 0; i < size; i++)
 
 	while (j < size)
 	{
-		if (array[j] <= array[x])
+		if (array[j] < array[x])
 		{
 			x = j;
 
