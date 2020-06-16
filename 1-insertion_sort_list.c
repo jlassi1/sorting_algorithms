@@ -30,15 +30,15 @@ while (head)
 			if (curr->next)
 				curr->next->prev = tmp;
 
-
 			tmp->next  = curr->next;
 			curr->prev = tmp->prev;
 
 			curr->next = tmp;
 			tmp->prev = curr;
 			print_list(*list);
+			continue;
 		}
-		else
+
 			curr = curr->prev;
 
 	}
