@@ -37,8 +37,8 @@ while (head)
 			curr->next = tmp;
 			tmp->prev = curr;
 			print_list(*list);
-            continue;
 		}
+		else
 			curr = curr->prev;
 
 	}
