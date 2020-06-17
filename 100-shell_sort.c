@@ -1,5 +1,18 @@
 #include"sort.h"
+/**
+ * swap - function to swap two ints
+ * @a: first int
+ * @b: second int
+ *
+ * Return: Void
+ */
 
+void swap(int *a, int *b)
+{
+	int t = *a;
+	*a = *b;
+	*b = t;
+}
 /**
  * shell_sort - sorts an arry in a shell algorithm
  * @array: an array
@@ -45,4 +58,3 @@ for (i = 0; i < size - 1; i++)
 	}
 }
 }
-
