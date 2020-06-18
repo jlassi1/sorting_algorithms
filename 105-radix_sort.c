@@ -78,12 +78,13 @@ free(occu);
  */
 void radix_sort(int *array, size_t size)
 {
-int max = max_array(array, size);
+int max;
 int post;
 
 	if (!array || size < 2)
 		return;
 
+max = max_array(array, size);
 	for (post = 1; max / post > 0; post *= 10)
 	{
 		countingsort(array, size, post);
